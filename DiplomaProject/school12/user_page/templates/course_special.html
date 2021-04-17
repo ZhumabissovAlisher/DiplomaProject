@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content  %}
+<div class="row">
+    <div class="col-md-8">
+        <img src="{% static news.image %}" alt="" width="100%">
+    </div>
+    <div class="col-md-4">
+        <h5>{{ news.title }}</h5>
+        <p>{{ news.description }}</p>
+        <br>
+    </div>
+</div>
+{% endblock %}
